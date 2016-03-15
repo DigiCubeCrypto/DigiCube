@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QSystemTrayIcon>
 
+#include "ontheweb.h"
+
 class TransactionTableModel;
 class ClientModel;
 class WalletModel;
@@ -69,6 +71,7 @@ private:
     SendCoinsDialog *sendCoinsPage;
     SignVerifyMessageDialog *messagePage;
     MultisigDialog *multisigPage;
+	Ontheweb *onthewebPage;
 
     QLabel *labelEncryptionIcon;
     QLabel *labelConnectionsIcon;
@@ -96,6 +99,7 @@ private:
     QAction *changePassphraseAction;
     QAction *aboutQtAction;
     QAction *openRPCConsoleAction;
+	QAction *onthewebAction;
 
     QSystemTrayIcon *trayIcon;
     Notificator *notificator;
@@ -154,6 +158,8 @@ private slots:
     void gotoReceiveCoinsPage();
     /** Switch to send coins page */
     void gotoSendCoinsPage();
+	/** Switch to On the Web page */
+    void gotoOnthewebPage();
 
     /** Show configuration dialog */
     void optionsClicked();
