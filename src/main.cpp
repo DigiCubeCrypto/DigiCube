@@ -949,14 +949,7 @@ int64 GetProofOfStakeReward(int64 nCoinAge, int nHeight)
 	int64 nMinReward = nHeight * .0011;
 	int64 nMaxReward = nHeight * .01;
 	int64 nSquish = nSubsidy / 1000000;
-    
-    printf("nSubsidy=%d\n", nSubsidy);
-    printf("nCoinAge=%d\n", nCoinAge);
-    printf("nMinReward=%d\n", nMinReward);
-    printf("nMaxReward=%d\n", nMaxReward);
-    printf("nSquish=%d\n", nSquish);
-
-		if (nHeight > 500000) {
+    		if (nHeight > 500000) {
 			if (nSquish > nMaxReward) {
 				nSubsidy = nMaxReward * COIN;
 			}
