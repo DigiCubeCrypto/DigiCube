@@ -946,9 +946,9 @@ int64 GetProofOfStakeReward(int64 nCoinAge, int nHeight)
 {
     static int64 nRewardCoinYear = 2000 * CENT;
     int64 nSubsidy = nRewardCoinYear * nCoinAge * 33 / (365 * 33 + 8);
-	int64 nMinReward = nHeight * .0011;
-	int64 nMaxReward = nHeight * .01;
-	int64 nSquish = nSubsidy / 1000000;
+    int64 nMinReward = nHeight * .0011;
+    int64 nMaxReward = nHeight * .01;
+    int64 nSquish = nSubsidy / 1000000;
     	if (nHeight > 500000) {
 		nSubsidy = nRewardCoinYear * nCoinAge * 33 / (365 * 33 + 8);
 		if (nSquish > nMaxReward) {
