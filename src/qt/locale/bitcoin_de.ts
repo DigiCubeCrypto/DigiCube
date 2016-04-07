@@ -1123,7 +1123,7 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.</translation
     <message>
         <location filename="../optionsdialog.cpp" line="217"/>
         <source>DigiCube has no network transaction fees. This means you can send and combine coins as much and as often as you want for FOR FREE. Play with it, experiment, and set your blocks up perfectly to maximize your stake returns</source>
-        <translation>Vorgeschriebene Netzwerktransaktionsgebühr pro übertragenes kB. Die meisten Transaktionen sind 1 kB groß und erfordern eine Gebühr von 0.01 PPC. Hinweis: Die Transaktionsgröße kann sich je nach Anzahl der Eingangstransaktionen, die zum Erreichen des Gesamtbetrages zusammengerechnet werden,  erhöhen.</translation>
+        <translation>Vorgeschriebene Netzwerktransaktionsgebühr pro übertragenes kB. Die meisten Transaktionen sind 1 kB groß und erfordern eine Gebühr von 0.01 CUBE. Hinweis: Die Transaktionsgröße kann sich je nach Anzahl der Eingangstransaktionen, die zum Erreichen des Gesamtbetrages zusammengerechnet werden,  erhöhen.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="223"/>
@@ -1432,8 +1432,8 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.</translation
     </message>
     <message>
         <location filename="../forms/qrcodedialog.ui" line="105"/>
-        <source>PPC</source>
-        <translation>PPC</translation>
+        <source>CUBE</source>
+        <translation>CUBE</translation>
     </message>
     <message>
         <location filename="../forms/qrcodedialog.ui" line="121"/>

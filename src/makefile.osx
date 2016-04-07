@@ -70,7 +70,7 @@ else
 CFLAGS = -g
 endif
 
-# ppc doesn't work because we don't support big-endian
+# CUBE doesn't work because we don't support big-endian
 CFLAGS += -Wextra -Wno-sign-compare -Wno-invalid-offsetof -Wformat-security \
     $(DEBUGFLAGS) $(DEFS) $(INCLUDEPATHS)
 

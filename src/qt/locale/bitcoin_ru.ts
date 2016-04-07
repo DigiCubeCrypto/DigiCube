@@ -1131,7 +1131,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../optionsdialog.cpp" line="217"/>
         <source>DigiCube has no network transaction fees. This means you can send and combine coins as much and as often as you want for FOR FREE. Play with it, experiment, and set your blocks up perfectly to maximize your stake returns</source>
-        <translation>Обязательные операционные платы за каждый килобайт перечислены. Большинство операций имеют меньше 1 килобайта и оплачиваются в размере 0.01 PPC. Замечание: размер перевода может увеличиваться в зависимости от количества входных операций, добавляемых вместе, чтобы финансировать оплату. </translation>
+        <translation>Обязательные операционные платы за каждый килобайт перечислены. Большинство операций имеют меньше 1 килобайта и оплачиваются в размере 0.01 CUBE. Замечание: размер перевода может увеличиваться в зависимости от количества входных операций, добавляемых вместе, чтобы финансировать оплату. </translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="223"/>
@@ -1440,8 +1440,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../forms/qrcodedialog.ui" line="105"/>
-        <source>PPC</source>
-        <translation>PPC</translation>
+        <source>CUBE</source>
+        <translation>CUBE</translation>
     </message>
     <message>
         <location filename="../forms/qrcodedialog.ui" line="121"/>

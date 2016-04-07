@@ -19,7 +19,7 @@ Modified for DigiCube by Ben Rossi <ben@rossinet.com>
 See readme-qt.rst for instructions on building the DigiCube community version of DigiCube QT, the
 graphical user interface.
 
-Tested on 10.5 and 10.6 intel.  PPC is not supported because it's big-endian.
+Tested on 10.5 and 10.6 intel.  CUBE is not supported because it's big-endian.
 
 All of the commands should be executed in Terminal.app.. it's in
 /Applications/Utilities

@@ -719,7 +719,7 @@ Adresse : %4
         <location filename="../forms/coincontroldialog.ui" line="310"/>
         <location filename="../forms/coincontroldialog.ui" line="348"/>
         <source>0.00 BTC</source>
-        <translation>0.00 PPC</translation>
+        <translation>0.00 CUBE</translation>
     </message>
     <message>
         <location filename="../forms/coincontroldialog.ui" line="157"/>
@@ -1134,7 +1134,7 @@ Cette étiquette devient rouge si la priorité est inférieure à &quot;moyenne&
     <message>
         <location filename="../optionsdialog.cpp" line="217"/>
         <source>DigiCube has no network transaction fees. This means you can send and combine coins as much and as often as you want for FOR FREE. Play with it, experiment, and set your blocks up perfectly to maximize your stake returns</source>
-        <translation>Frais obligatoires de traitement des transactions par le réseau par ko transféré. La plupart des transactions font 1 ko pour un coût de 0,01 PPC. Note: la taille des transferts peut augmenter en fonction du nombre de transactions d&apos;entrée qui doivent être ajoutées pour couvrir le montant du paiement.</translation>
+        <translation>Frais obligatoires de traitement des transactions par le réseau par ko transféré. La plupart des transactions font 1 ko pour un coût de 0,01 CUBE. Note: la taille des transferts peut augmenter en fonction du nombre de transactions d&apos;entrée qui doivent être ajoutées pour couvrir le montant du paiement.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="223"/>
@@ -1443,8 +1443,8 @@ Cette étiquette devient rouge si la priorité est inférieure à &quot;moyenne&
     </message>
     <message>
         <location filename="../forms/qrcodedialog.ui" line="105"/>
-        <source>PPC</source>
-        <translation>PPC</translation>
+        <source>CUBE</source>
+        <translation>CUBE</translation>
     </message>
     <message>
         <location filename="../forms/qrcodedialog.ui" line="121"/>
@@ -1643,7 +1643,7 @@ Cette étiquette devient rouge si la priorité est inférieure à &quot;moyenne&
         <location filename="../forms/sendcoinsdialog.ui" line="496"/>
         <location filename="../forms/sendcoinsdialog.ui" line="528"/>
         <source>0.00 BTC</source>
-        <translation>0.00 PPC</translation>
+        <translation>0.00 CUBE</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="337"/>

@@ -1418,7 +1418,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../forms/qrcodedialog.ui" line="105"/>
-        <source>PPC</source>
+        <source>CUBE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
