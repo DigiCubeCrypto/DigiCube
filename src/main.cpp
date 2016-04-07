@@ -949,27 +949,27 @@ int64 GetProofOfStakeReward(int64 nCoinAge, int nHeight)
 	int64 nMinReward = nHeight * .0011;
 	int64 nMaxReward = nHeight * .01;
 	int64 nSquish = nSubsidy / 1000000;
-    		if (nHeight > 500000) {
-				nSubsidy = nRewardCoinYear * nCoinAge * 33 / (365 * 33 + 8);
-				if (nSquish > nMaxReward) {
-					nSubsidy = nMaxReward * COIN;
-				}
-				if (nSquish < nMinReward) {
-					nSubsidy = 1 * COIN;
-				}
-			}		
-    		if (nHeight > 600000) {
-				nSubsidy = nRewardCoinYear * nCoinAge * 33 / (365 * 33 + 8);
-				nSquish = nSquish * 10;
-				nMinReward = nMinReward * 10;
-				nMaxReward = nMaxReward * 10;
-				if (nSquish > nMaxReward) {
-					nSubsidy = nMaxReward * COIN;
-				}
-				if (nSquish < nMinReward) {
-					nSubsidy = 1 * COIN;
-				}
-			}
+    	if (nHeight > 500000) {
+		nSubsidy = nRewardCoinYear * nCoinAge * 33 / (365 * 33 + 8);
+		if (nSquish > nMaxReward) {
+			nSubsidy = nMaxReward * COIN;
+		}
+		if (nSquish < nMinReward) {
+			nSubsidy = 1 * COIN;
+		}
+	}		
+    	if (nHeight > 600000) {
+		nSubsidy = nRewardCoinYear * nCoinAge * 33 / (365 * 33 + 8);
+		nSquish = nSquish * 10;
+		nMinReward = nMinReward * 10;
+		nMaxReward = nMaxReward * 10;
+		if (nSquish > nMaxReward) {
+			nSubsidy = nMaxReward * COIN;
+		}
+		if (nSquish < nMinReward) {
+			nSubsidy = 1 * COIN;
+		}
+	}
     return nSubsidy;
 }
 
