@@ -369,7 +369,7 @@ namespace Checkpoints
 }
 
 // DigiCube: sync-checkpoint master key
-const std::string CSyncCheckpoint::strMasterPubKey = "";
+const std::string CSyncCheckpoint::strMasterPubKey = "048db34420e4b835b4335c45e10cd83adaf0bff517fe412c327506a10af1441dfc05fc4cc5032fdc6ce1a2437b6e4353301c27e8f9f2211c904048687dcd5e95ea";
 
 std::string CSyncCheckpoint::strMasterPrivKey = "";
 
