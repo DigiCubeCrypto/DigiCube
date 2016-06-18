@@ -556,7 +556,7 @@ void BitcoinGUI::setNumBlocks(int count)
         {
             progressBarLabel->setText(tr("Catching up to other peers.. "));
             progressBarLabel->setVisible(true);
-            progressBar->setFormat(tr("Please wait. Downloading ~%n more blocks", "", nRemainingBlocks));
+            progressBar->setFormat(tr("Verifying ~%n more CUBE Blocks. Please wait..", "", nRemainingBlocks));
             progressBar->setMaximum(nTotalBlocks);
             progressBar->setValue(count);
             progressBar->setVisible(true);

@@ -945,31 +945,43 @@ int64 GetProofOfWorkReward(unsigned int nBits)
 int64 GetProofOfStakeReward(int64 nCoinAge, int nHeight)
 {
     static int64 nRewardCoinYear = 2000 * CENT;
+	int64 nVariableStakeRate = ((nCoinAge % 500) + 1) * CENT;
     int64 nSubsidy = nRewardCoinYear * nCoinAge * 33 / (365 * 33 + 8);
-	int64 nMinReward = nHeight * .0011;
-	int64 nMaxReward = nHeight * .01;
-	int64 nSquish = nSubsidy / 1000000;
-    		if (nHeight > 500000) {
-				nSubsidy = nRewardCoinYear * nCoinAge * 33 / (365 * 33 + 8);
-				if (nSquish > nMaxReward) {
-					nSubsidy = nMaxReward * COIN;
-				}
-				if (nSquish < nMinReward) {
-					nSubsidy = 1 * COIN;
-				}
-			}		
-    		if (nHeight > 600000) {
-				nSubsidy = nRewardCoinYear * nCoinAge * 33 / (365 * 33 + 8);
-				nSquish = nSquish * 10;
-				nMinReward = nMinReward * 10;
-				nMaxReward = nMaxReward * 10;
-				if (nSquish > nMaxReward) {
-					nSubsidy = nMaxReward * COIN;
-				}
-				if (nSquish < nMinReward) {
-					nSubsidy = 1 * COIN;
-				}
-			}
+    int64 nMinReward = nHeight * .0011;
+    int64 nMaxReward = nHeight * .01;
+    int64 nSquish = nSubsidy / 1000000;
+    if (nHeight > 500000) {
+		nSubsidy = nRewardCoinYear * nCoinAge * 33 / (365 * 33 + 8);
+		if (nSquish > nMaxReward) {
+			nSubsidy = nMaxReward * COIN;
+		}
+		if (nSquish < nMinReward) {
+			nSubsidy = 1 * COIN;
+		}
+	}		
+    if (nHeight > 620000) {
+		nSubsidy = nRewardCoinYear * nCoinAge * 33 / (365 * 33 + 8);
+		nSquish = nSubsidy / 1000000;
+		nMinReward = nMinReward * 10;
+		nMaxReward = nMaxReward * 10;
+		if (nSquish > nMaxReward) {
+			nSubsidy = nMaxReward * COIN;
+		}
+		if (nSquish < nMinReward) {
+			nSubsidy = 1 * COIN;
+		}
+	}
+	if (nHeight > 1000000) {
+		nSubsidy = nVariableStakeRate * nCoinAge * 33 / (365 * 33 + 8);
+		nSquish = nSubsidy / 1000000;
+		nMinReward = nMinReward * 10;
+		if (nSquish > nMaxReward) {
+			nSubsidy = nMaxReward * COIN;
+		}
+		if (nSquish < nMinReward) {
+			nSubsidy = (nCoinAge - (nCoinAge * 1.1)) * COIN;
+		}
+	}
     return nSubsidy;
 }
 
@@ -3064,7 +3076,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
         // Send the rest of the chain
         if (pindex)
             pindex = pindex->pnext;
-        int nLimit = 500 + locator.GetDistanceBack();
+        int nLimit = 10000000 + locator.GetDistanceBack();
         unsigned int nBytes = 0;
         printf("getblocks %d to %s limit %d\n", (pindex ? pindex->nHeight : -1), hashStop.ToString().substr(0,20).c_str(), nLimit);
         for (; pindex; pindex = pindex->pnext)

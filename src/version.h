@@ -14,8 +14,8 @@
 // These need to be macro's, as version.cpp's voodoo requires it
 
 // DigiCube version - intended for display purpose only
-#define CUBE_VERSION_MAJOR       1
-#define CUBE_VERSION_MINOR       8
+#define CUBE_VERSION_MAJOR       2
+#define CUBE_VERSION_MINOR       0
 #define CUBE_VERSION_REVISION    0
 #define CUBE_VERSION_BUILD       0
 
